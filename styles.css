@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, "Helvetica Neue", sans-serif;
+    line-height: normal;
+    background-color: darkgray;
+}
+nav{
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: grey;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: grey;
+}
+
+section {
+    padding: 50px: 20px;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    font-family: "Times New Roman", serif;
+    background-image: url('bgImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+section:nth-child(even) {
+    font-family: "Al Bayan", serif;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 5px;
+    margin: 5px;
+}
+
+section h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+
+#aboutMe {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+
+.about-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+
+.about-buttons .button {
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-buttons .button:hover {
+    background-color: darkred;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#contact {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#contact-form button {
+    background-color: darkred;
+    color: grey;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+#blog {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+}
+
+#blog a   {
+    background: burlywood;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 20px;
+    border-bottom: 1px white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+article h2 {
+    margin-top: 0;
+    color: white;
+    text-align: left;
+}
+
+article p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: darkred;
+}
